@@ -12,7 +12,7 @@ export const reducer = (state, action) => {
   
   switch (action.type){
     case 'ADD_TODO':
-      return [...state, {item:action.payload, sompleted: false, id: Date.now() }];
+      return [...state, {item:action.payload, completed: false, id: Date.now() }];
            
     case 'TOGGLE_DONE':
       return state.map(todo => {
